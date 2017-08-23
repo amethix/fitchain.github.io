@@ -1,0 +1,223 @@
+<style>
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+.panel {
+  font-family: 'Source Sans Pro'; */
+  top: 10px;
+  font-size: 1.3em;
+  /* color: white; */
+  position: absolute;
+  /* z-index: -2; */
+  width: 100%;
+  height: 120px;
+  top: 490px;
+  background: rgba(238, 238, 238, 0);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* left: 50%; */
+  /* margin: -110px 0 0 -100px; */
+  /* padding: 20px; */
+  /* border-radius: 4px; */
+  /* box-sizing: border-box; */
+  /* z-index: 100; */
+  /* background: rgba(204, 204, 204, 0); */
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+/*
+    background-image: url(/img/intro-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+*/
+    width: 100%;
+    max-height: 600px;
+    background-color: #ccc;
+    background-image: url(/img/fitchain.png);
+    background-size: initial;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+
+
+}
+
+</style>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#home">{{ site.title }}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+            	<li>
+                    <a class="page-scroll" href="#about">Features</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Use Cases</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<div class="panel">
+  <ul class="list-inline intro-social-buttons">
+    {% for social in site.social %}
+    <li>
+      <a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
+<!-- Header -->
+<!--
+	<div class="panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="intro-message">
+
+            <h1>{{ page.title }}</h1>
+						<h3>{{ page.subTitle }}</h3>
+						<hr class="intro-divider">
+
+            <ul class="list-inline intro-social-buttons">
+							{% for social in site.social %}
+							<li>
+								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+-->
+	<!-- /.intro-header -->
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+
+<!--
+<section id="home">
+	<div class="intro-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="intro-message">
+						<h1>{{ page.title }}</h1>
+						<h3>{{ page.subTitle }}</h3>
+						<hr class="intro-divider">
+						<ul class="list-inline intro-social-buttons">
+							{% for social in site.social %}
+							<li>
+								<a href="{{ social.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ social.title }} fa-fw"></i> <span class="network-name">{{ social.title }}</span></a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+-->

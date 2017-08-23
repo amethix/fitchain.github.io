@@ -1,0 +1,31 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://fitchain.io
+title: fitchain
+email: contact@amethix.com
+author: Francesco Gadaleta
+description: "A Decentralized Machine Learning Factory For Data and Model Trading"
+copyright: 'Copyright &copy; 2017 fitchain.io All Rights Reserved.'
+credits: 'Credits: amethix.com'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: twitter
+    url: https://twitter.com/amethixtech
+  - title: github
+    url: https://github.com/amethix
+  - title: linkedin
+    url:

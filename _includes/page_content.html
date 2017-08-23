@@ -1,0 +1,162 @@
+<section id="features" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-6 col-sm-6">
+        <!--
+	    <hr class="section-heading-spacer">
+            <div class="clearfix"></div>-->
+	<div class="illustration"> <img src="/img/model-training.svg"></div>
+        <h2 class="section-heading">Train models</h2>
+        <div class="lead">Organisations cannot always share their data due to governance and confidentiality. Therefore large amounts of data are locked inside organisations, without any possibility for data scientists to extract knowledge and value.
+	  <br /><br />
+
+	  Fitchain makes it possible to analyse data that are otherwise locked in the organisation, keeping it within the organisation's infrastructure.
+	</div>
+      </div>
+      
+      <div class="col-lg-6 col-sm-6">
+        <!-- <hr class="section-heading-spacer">
+             <div class="clearfix"></div>-->
+	<div class="illustration"> <img src="/img/data-monetize.svg"></div>
+        <h2 class="section-heading">Monetize data </h2>
+        <div class="lead">Organisations who allow data scientists to train their models, usually have to reveal their data together with their industrial secrets. An ideal process consists in making data available while keeping it private, and exchange it for models, fiat or cryptocurrency.
+	  <br /> <br />
+	Fitchain facilitates the process of data sharing without disclosing any secret.</div>
+      </div>
+      <!--
+      <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+      </div>
+      -->
+      
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-6 col-sm-6">
+        <!--
+	    <hr class="section-heading-spacer">
+            <div class="clearfix"></div>-->
+	<div class="illustration"> <img src="/img/model-monetize.svg"></div>
+	<h2 class="section-heading">Monetize models</h2>
+        <div class="lead">In the data-model marketplace, data scientists can monetize their machine learning models, training them on interesting datasets and challenging problems.
+	  <br /> <br />
+	Fitchain makes model sharing easy for the data scientist who wants to monetize her models easily and quickly.</div>
+      </div>
+      <!--
+      <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+      </div>
+      -->
+
+      <div class="col-lg-6 col-sm-6">
+        <!-- <hr class="section-heading-spacer">
+             <div class="clearfix"></div>-->
+	
+	<div class="illustration"> <img src="/img/model-blockchain.svg"></div>
+        <h2 class="section-heading">Validate training</h2>
+        <div class="lead">Models that are executed out of the data scientist's control need to be validated and verified. Submitted code must be executed as is, and a security mechanism must guarantee that it is not tampering with local infrastructure.
+	  <br /> <br />
+	  Fitchain guarantees code execution transparency and model validation with state of the art blockchain technology.
+	  </div>
+      </div>
+      <!--
+      <div class="col-lg-6 col-lg-offset-2 col-sm-6">
+        <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+      </div>
+      -->
+      
+    </div>
+  </div> 
+</section>
+
+
+
+<!--
+<section id="services" class="container content-section text-center">
+  <div class="row" style="margin-top:42px; margin-bottom:42px;">
+    <h3> Fitchain is useful to many </h3>
+    <div class="col-lg-12">
+      <div class="col-lg-4 col-sm-6">
+       	<div class="illustration"> <img src="/img/usecase-banking.svg"></div>
+        <h2 class="section-heading">Banking Services</h2>
+        <div class="lead">Banks and financial institutions are highly regulated environments in which data analytics
+	  is essential while maintaining ownership of the data to be analysed.
+	</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6">
+       	<div class="illustration"> <img src="/img/usecase-healthcare.svg"></div>
+        <h2 class="section-heading">Healthcare Providers</h2>
+        <div class="lead">In Healthcare&Pharma, data analytics is more and more prominent. In such domains, data is the most important asset, carrying industrial secrets and sensitive information.
+	</div>
+      </div>
+      
+      <div class="col-lg-4 col-sm-6">
+       	<div class="illustration"> <img src="/img/data-monetize.svg"></div>
+        <h2 class="section-heading">Researchers</h2>
+        <div class="lead">Data scientists are constantly searching for fresh data to train experimental models with higher accuracy. Such data is mostly not available if not de-identified or encrypted.
+	</div>
+      </div>     
+    </div>
+  </div>
+</section>
+
+-->
+
+<!--
+<section id="services">
+  
+{% for post in site.posts reversed %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+  
+
+    </div>
+  
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    {% endif %}
+{% endfor %}
+</section>
+-->
