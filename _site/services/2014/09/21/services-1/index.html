@@ -129,6 +129,7 @@ canvas{
     position: relative;
 }
 
+
 .logo{
   height: 120px;
     /* width: 250px; */
@@ -145,8 +146,8 @@ background-repeat: no-repeat;
     font-style: normal;
     margin-bottom: 20px;
     font-size: 40px;
-     position: relative;
- top: 175px;
+    position: relative;
+    top: 175px;
     //z-index: 2;
     text-shadow: 0 0 50px #041727;
 }
@@ -159,9 +160,44 @@ background-repeat: no-repeat;
     font-size: 22px;
     line-height: 150%;
     position: relative;
-//z-index: 2;
-top: 160px;
+    //z-index: 2;
+    top: 160px;
 }
+
+#mc_embed_signup{
+   background: #15303e;
+   margin-left: -42px;
+   clear:left;
+   font:14px Helvetica,Arial,sans-serif;
+   width:100%;
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+
+.logo{
+height: 90px;
+}
+
+.hero{
+top:42px;
+}
+
+.title{
+top:105px;
+font-size: 32px;
+}
+
+#mc_embed_signup{
+   background: #15303e;
+   margin-left: 0px;
+}
+
+
+}
+
 
 </style>
 
@@ -546,6 +582,7 @@ top: 160px;
 </section>
 -->
 
+		
 		<section id="contact">
   <div class="banner">
     <div class="container">
@@ -556,19 +593,15 @@ top: 160px;
 	  
 	  <!-- Begin MailChimp Signup Form -->
 	  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-	  <style type="text/css">
-	    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-	  </style>
-	  <div id="mc_embed_signup" style="background: #15303e; margin-left: -42px;">
+	  <div id="mc_embed_signup">
 	    <form action="//gipsyrunner.us9.list-manage.com/subscribe/post?u=7df5a060600c0903bedb640c9&amp;id=aae2ab2245" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	      <div id="mc_embed_signup_scroll">
 		
 		<input type="email" value="" name="EMAIL" class="email" style="height:45px;" id="mce-EMAIL" placeholder="email address" required>
 		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7df5a060600c0903bedb640c9_aae2ab2245" tabindex="-1" value=""></div>
-		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg"></div>
+		<div class="clear">
+		  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default btn-lg"></div>
 	      </div>
 	    </form>
 	  </div>
@@ -691,6 +724,18 @@ top: 160px;
 
 <!-- Custom Theme JavaScript -->
 <script src="js/landing-page.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37903879-8', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 	</body>
 </html>
