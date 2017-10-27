@@ -11,13 +11,13 @@
     <title>Death to the Stock Photo:<br>Special Thanks</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="/css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,6 +28,7 @@
     <![endif]-->
 
 </head>
+
 
 	<body>
 		<style>
@@ -173,8 +174,8 @@ background-repeat: no-repeat;
 }
 
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 568px) {
 
 .logo{
@@ -198,6 +199,11 @@ font-size: 32px;
 
 }
 
+.btn-success {
+    color: #fff;
+    background-color: #428bc6;
+    border-color: rgba(0,0,0,.0001);
+}
 
 </style>
 
@@ -212,7 +218,7 @@ font-size: 32px;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#home">fitchain</a>
+            <a class="navbar-brand page-scroll" href="/">fitchain</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -224,7 +230,7 @@ font-size: 32px;
                     <a class="page-scroll" href="#services">Use Cases</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -240,14 +246,14 @@ font-size: 32px;
   <div class="hero logo">
     <!--<div class="logo"></div>-->
   <h2 class="title">fitchain is the machine learning factory</h2>
-  <h3 class="subtitle">A decentralized data science platform
+  <h3 class="subtitle">A decentralized machine learning platform
     <br />
-    with data confidentiality in mind</h3>
+    to analyse data with confidentiality in mind</h3>
   </div>
 </div>
 
 
-<!-- SOCIAL BUTTONS 
+<!-- SOCIAL BUTTONS
 <div class="panel">
   <ul class="list-inline intro-social-buttons">
     
@@ -311,11 +317,11 @@ font-size: 32px;
 
 
 <!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
+<script src="/js/particles.js"></script>
+<script src="/js/app.js"></script>
 
 <!-- stats.js -->
-<script src="js/lib/stats.js"></script>
+<script src="/js/lib/stats.js"></script>
 <script>
   var count_particles, stats, update;
   stats = new Stats;
@@ -396,19 +402,24 @@ font-size: 32px;
             <div class="clearfix"></div>-->
 	<div class="illustration"> <img src="/img/model-training.svg"></div>
         <h2 class="section-heading">Train models</h2>
-        <div class="lead">Organisations cannot always share their data due to governance and confidentiality. Therefore large amounts of data are locked inside organisations, without any possibility for data scientists to extract knowledge and value.
+        <div class="lead">Organisations cannot always share their data due to governance and confidentiality.
+          Therefore large amounts of data are locked inside organisations, without any possibility for data scientists
+          to extract knowledge and value.
 	  <br /><br />
 
-	  Fitchain makes it possible to analyse data that are otherwise locked in the organisation, keeping it within the organisation's infrastructure.
+	  Fitchain makes it possible to analyse data that are otherwise locked in the organisation, keeping it within the
+    organisation's infrastructure.
 	</div>
       </div>
-      
+
       <div class="col-lg-6 col-sm-6">
         <!-- <hr class="section-heading-spacer">
              <div class="clearfix"></div>-->
 	<div class="illustration"> <img src="/img/data-monetize.svg"></div>
         <h2 class="section-heading">Monetize data </h2>
-        <div class="lead">Organisations who allow data scientists to train their models, usually have to reveal their data together with their industrial secrets. An ideal process consists in making data available while keeping it private, and exchange it for models, fiat or cryptocurrency.
+        <div class="lead">Organisations who allow data scientists to train their models, usually have to reveal their
+          data together with their industrial secrets. An ideal process consists in making data available while keeping
+          it private, and exchange it for models, fiat or cryptocurrency.
 	  <br /> <br />
 	Fitchain facilitates the process of data sharing without disclosing any secret.</div>
       </div>
@@ -417,7 +428,7 @@ font-size: 32px;
         <img class="img-responsive" src="img/services/" alt="">
       </div>
       -->
-      
+
     </div>
   </div>
 
@@ -430,7 +441,8 @@ font-size: 32px;
             <div class="clearfix"></div>-->
 	<div class="illustration"> <img src="/img/model-monetize.svg"></div>
 	<h2 class="section-heading">Monetize models</h2>
-        <div class="lead">In the data-model marketplace, data scientists can monetize their machine learning models, training them on interesting datasets and challenging problems.
+        <div class="lead">In the data-model marketplace, data scientists can monetize their machine learning models,
+          training them on interesting datasets and challenging problems.
 	  <br /> <br />
 	Fitchain makes model sharing easy for the data scientist who wants to monetize her models easily and quickly.</div>
       </div>
@@ -443,12 +455,15 @@ font-size: 32px;
       <div class="col-lg-6 col-sm-6">
         <!-- <hr class="section-heading-spacer">
              <div class="clearfix"></div>-->
-	
+
 	<div class="illustration"> <img src="/img/model-blockchain.svg"></div>
-        <h2 class="section-heading">Validate training</h2>
-        <div class="lead">Models that are executed out of the data scientist's control need to be validated and verified. Submitted code must be executed as is, and a security mechanism must guarantee that it is not tampering with local infrastructure.
+        <h2 class="section-heading">Proof-of-train</h2>
+        <div class="lead">Models that are executed out of the data scientist's control need to be validated and verified.
+          Submitted code must be executed as is, and a security mechanism must guarantee that it is not tampering with
+          local infrastructure.
 	  <br /> <br />
-	  Fitchain guarantees code execution transparency and model validation with state of the art blockchain technology.
+	  Fitchain guarantees code execution transparency and model validation with state of the art blockchain technology
+    (proof-of-train)
 	  </div>
       </div>
       <!--
@@ -456,9 +471,9 @@ font-size: 32px;
         <img class="img-responsive" src="img/services/" alt="">
       </div>
       -->
-      
+
     </div>
-  </div> 
+  </div>
 </section>
 
 
@@ -475,20 +490,20 @@ font-size: 32px;
 	  is essential while maintaining ownership of the data to be analysed.
 	</div>
       </div>
-      
+
       <div class="col-lg-4 col-sm-6">
        	<div class="illustration"> <img src="/img/usecase-healthcare.svg"></div>
         <h2 class="section-heading">Healthcare Providers</h2>
         <div class="lead">In Healthcare&Pharma, data analytics is more and more prominent. In such domains, data is the most important asset, carrying industrial secrets and sensitive information.
 	</div>
       </div>
-      
+
       <div class="col-lg-4 col-sm-6">
        	<div class="illustration"> <img src="/img/data-monetize.svg"></div>
         <h2 class="section-heading">Researchers</h2>
         <div class="lead">Data scientists are constantly searching for fresh data to train experimental models with higher accuracy. Such data is mostly not available if not de-identified or encrypted.
 	</div>
-      </div>     
+      </div>
     </div>
   </div>
 </section>
@@ -497,7 +512,7 @@ font-size: 32px;
 
 <!--
 <section id="services">
-  
+
 
   
     
@@ -519,10 +534,10 @@ font-size: 32px;
             </div>
 
         </div>
-  
+
 
     </div>
-  
+
     
 
   
@@ -548,7 +563,7 @@ font-size: 32px;
             </div>
 
         </div>
-        
+
 
     </div>
 
@@ -573,10 +588,10 @@ font-size: 32px;
             </div>
 
         </div>
-  
+
 
     </div>
-  
+
     
 
 </section>
@@ -714,16 +729,16 @@ font-size: 32px;
 -->
 
 		<!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
+<script src="/js/jquery-1.11.0.js"></script>
 
 <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/landing-page.js"></script>
+<script src="/js/landing-page.js"></script>
 
 
 <script>
