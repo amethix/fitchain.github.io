@@ -136,7 +136,7 @@ var pJS = function(tag_id, params){
 
     var pJS = this.pJS;
     
-    console.log('FIRST ever ' + pJS.interactivity.events.onhover.enable);
+    //console.log('FIRST ever ' + pJS.interactivity.events.onhover.enable);
     
   /* params settings */
   if(params){
